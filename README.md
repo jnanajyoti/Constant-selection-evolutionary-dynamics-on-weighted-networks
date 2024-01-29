@@ -4,4 +4,4 @@ The <a href="https://github.com/jnanajyoti/Fixation-Probability/blob/main/functi
 
 
 ## Dependencies
-The file depends on NumPy, pandas, and NetworkX.
+The file <a href="https://github.com/jnanajyoti/Fixation-Probability/blob/main/functions.ipynb">functions.ipynb</a> depends on  NumPy, pandas, and NetworkX.
