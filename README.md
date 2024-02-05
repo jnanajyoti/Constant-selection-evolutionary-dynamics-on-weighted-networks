@@ -1,8 +1,7 @@
 
 # Fixation Probability Calculation Notebook
 
-This repository contains the `functions.ipynb` Jupyter notebook, offering a comprehensive suite of functions to calculate the fixation probabilities within static and dynamically switching networks. The methodology implemented herein draws inspiration from the work by Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context of the study by Bhaumik & Masuda (2023) as detailed in their publication [here](https://link.springer.com/article/10.1007/s00285-023-01987-5).
-
+This repository contains the `functions.ipynb` Jupyter notebook, offering a comprehensive suite of functions to calculate the fixation probabilities within static and temporal switching networks. The methods implemented are based on Bhaumik & Masuda (2023) as detailed in their publication [here](https://link.springer.com/article/10.1007/s00285-023-01987-5). The methods for the static netowkrs are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context
 ## How to Use
 
 The `functions.ipynb` notebook is equipped with functions designed for the analysis of fixation probabilities across various network configurations, including static networks and those subject to temporal switching. Below is a breakdown of the primary functions and their intended applications:
