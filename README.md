@@ -17,19 +17,19 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### For Larger Symmetric Networks
 
-- **Star Graph + Complete Graph Switching Networks (2N x 2N)**:
-  - **`star_Tmat(n, r)`**: Computes the transition matrix for a star graph.
-  - **`complete_Tmat(n, r)`**: Computes the transition matrix for a complete graph.
-  - **`star_complete_agg_Tmat(n, r)`**: Aggregates transition matrices for star and complete graph switching.
-  - **`switch_matrix_2n_solver(M, N, t)`**: Placeholder for additional documentation.
-  - **`star_complete_solver(n, r)`**: Placeholder for additional documentation.
+- **Star Graph + Complete Graph Switching Networks (2N x 2N)**: 
+  - **`star_Tmat(n, r)`**: Computes the transition matrix for the star graph.
+  - **`complete_Tmat(n, r)`**: Computes the transition matrix for the complete graph.
+  - **`star_complete_agg_Tmat(n, r)`**: Aggregates transition matrices for star graph and complete graph switching network.
+  - **`switch_matrix_2n_solver(M, N, t)`**:Calcuates the fixation probability for the switching network.
+  - **`star_complete_solver(n, r)`**: Calcuates the fixation probability for the static aggregate network.
 
 - **Star Graph + Complete Graph Switching Networks (2M(N+1) x 2M(N+1))**:
-  - **`bipartite_Tmat(m, n, r)`**: Placeholder for additional documentation.
-  - **`star_2mn_Tmat(l, n, r)`**: Placeholder for additional documentation.
-  - **`star_bipartite_sum_Tmat(m, n, r)`**: Placeholder for additional documentation.
-  - **`switch_matrix_2mn_solver(a, b, r, s, t)`**: Placeholder for additional documentation.
-  - **`matrix_starbp2mn_solver(r, a, b)`**: Placeholder for additional documentation.
+  - **`bipartite_Tmat(m, n, r)`**:  Computes the transition matrix for the complete bipartite graph.
+  - **`star_2mn_Tmat(l, n, r)`**:  Computes the transition matrix for the star graph.
+  - **`star_bipartite_sum_Tmat(m, n, r)`**:  Computes the transition matrix for the aggregate network.
+  - **`switch_matrix_2mn_solver(a, b, r, s, t)`**: Calcuates the fixation probability for the switching network.
+  - **`matrix_starbp2mn_solver(r, a, b)`**: Calcuates the fixation probability for the static aggregate network.
 
 ### Random Initialization
 
@@ -37,7 +37,7 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### Stochastic Matrix
 
-- **`S_Mat(G1, G2, r, p)`**: Generates a stochastic matrix based on networks `G1`, `G2`, fitness `r`, and probability `p`.
+- **`S_Mat(G1, G2, r, p)`**: Computes the stochastic transition probability matrix based on networks `G1`, `G2`, fitness `r`, and probability `p`.
 
 ## Dependencies
 
