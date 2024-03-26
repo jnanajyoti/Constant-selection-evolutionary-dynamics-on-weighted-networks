@@ -27,13 +27,13 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ### For Simulations
 
 - **Complete Graph  (2N x 2N)**: 
-  - **`star_Tmat(n, r)`**: Computes the transition matrix for the star graph.
+  - **`matrix_complete_weight_solver(2,1,2,48,i/100)`**: Computes the transition matrix for the star graph.
 
 
 - **Star Graph  (2M(N+1) x 2M(N+1))**:
-  - **`bipartite_Tmat(m, n, r)`**:  Computes the transition matrix for the complete bipartite graph.
+  - **`weighted_star_solver(10,10,2,i/100)`**:  Computes the transition matrix for the complete bipartite graph.
 
-
+weighted_star_solver
 ## Dependencies
 
 To utilize the notebook, ensure the following Python libraries are installed:
