@@ -18,11 +18,11 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ### For Larger Symmetric Networks
 
 - **Complete Graph  (2N x 2N)**: 
-  - **`matrix_complete_weight_solver(w_1,w_2,N_1,N_2,r)`**: Computes the transition matrix for the star graph.
+  - **`matrix_complete_weight_solver(w_1,w_2,N_1,N_2,r)`**: Computes the fixation probability for the weighted complete graph, as described in Sec 4.2.1.
 
 
 - **Star Graph  (2M(N+1) x 2M(N+1))**:
-  - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the transition matrix for the complete bipartite graph.
+  - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the fixation probability for the weighted star graph, as described in Sec 4.2.2.
 
 
 ### For Simulations
