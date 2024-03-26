@@ -24,6 +24,14 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
   - **`bipartite_Tmat(m, n, r)`**:  Computes the transition matrix for the complete bipartite graph.
 
 
+### For Simulations
+
+- **Complete Graph  (2N x 2N)**: 
+  - **`star_Tmat(n, r)`**: Computes the transition matrix for the star graph.
+
+
+- **Star Graph  (2M(N+1) x 2M(N+1))**:
+  - **`bipartite_Tmat(m, n, r)`**:  Computes the transition matrix for the complete bipartite graph.
 
 
 ## Dependencies
