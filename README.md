@@ -18,11 +18,11 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ### For Larger Symmetric Networks
 
 - **Complete Graph  (2N x 2N)**: 
-  - **`star_Tmat(n, r)`**: Computes the transition matrix for the star graph.
+  - **`matrix_complete_weight_solver(w_1,w_2,N_1,N_2,r)`**: Computes the transition matrix for the star graph.
 
 
 - **Star Graph  (2M(N+1) x 2M(N+1))**:
-  - **`bipartite_Tmat(m, n, r)`**:  Computes the transition matrix for the complete bipartite graph.
+  - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the transition matrix for the complete bipartite graph.
 
 
 ### For Simulations
