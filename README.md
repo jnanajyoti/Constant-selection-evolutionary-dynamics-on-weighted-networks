@@ -12,9 +12,8 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 - **`T_weightMat_dB(G,r)`**: Generates the 2^N x 2^N transition probability matrix for a network `G` with fitness value `r`,for death-Birth updating.
 
-- **`matrix_solver(M)`**: Placeholder for additional documentation.
+- **`matrix_solver(M)`**: Compute the fixation probability of the transition matrix `M`.
 
-- **`switch_matrix_solver(M, N, t)`**: Placeholder for additional documentation.
 
 ### For Larger Symmetric Networks
 
