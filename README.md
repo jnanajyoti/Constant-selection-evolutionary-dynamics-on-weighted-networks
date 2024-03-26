@@ -27,14 +27,16 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### For Simulations
 
-- **Complete Graph  (2N x 2N)**: 
-  - **`matrix_complete_weight_solver(2,1,2,48,i/100)`**: Computes the transition matrix for the star graph.
+- **Unweighted networks**: 
+  - **`simulate(G,r)`**: Simulates the Birth-death process on the network `G` with mutant fitness `r`.
+  - **`simulation_count(G,n,r)`**: Simulates the Birth-death process on the network `G` with mutant fitness `r` `n` times, and returns the proportion of runs where the mutant fixated.
 
 
-- **Star Graph  (2M(N+1) x 2M(N+1))**:
-  - **`weighted_star_solver(10,10,2,i/100)`**:  Computes the transition matrix for the complete bipartite graph.
+- **Weighted networks**:
+  - **`weighted_simulate(G,r)`**: Simulates the Birth-death process on the weighted network `G` with mutant fitness `r`.
+  - **`weighted_simulation_count(G,n,r)`**: Simulates the Birth-death process on the weighted network `G` with mutant fitness `r` `n` times, and returns the proportion of runs where the mutant fixated.
 
-weighted_star_solver
+
 ## Dependencies
 
 To utilize the notebook, ensure the following Python libraries are installed:
