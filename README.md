@@ -18,7 +18,7 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### For larger symmetric networks
 
-- **Complete graph  <sup>(N<sub>1</sub>+1)(N2+1)</sup> x <sup>(N<sub>1</sub>+1)(N<sub>2</sub>+1)</sup>**: 
+- **Complete graph  (N<sub>1</sub>+1)(N2+1) x (N<sub>1</sub>+1)(N<sub>2</sub>+1)**: 
   - **`matrix_complete_weight_solver(w_1,w_2,N_1,N_2,r)`**: Computes the fixation probability for the weighted complete graph. See section 4.2.1 of the paper for the definition of the weighted complete graph.
 
 
