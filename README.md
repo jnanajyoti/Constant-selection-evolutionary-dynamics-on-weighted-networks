@@ -9,9 +9,9 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### Transition probability matrices
 
-- **`T_weightMat_Mat(G, r)`**: Generates the `2<sup>N</sup> x 2<sup>N</sup>` transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
+- **`T_weightMat_Mat(G, r)`**: Generates the 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
 
-- **`T_weightMat_dB(G,r)`**: Generates the `2^N x 2^N` transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
+- **`T_weightMat_dB(G,r)`**: Generates the 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
 
 - **`matrix_solver(M)`**: Compute the fixation probability of the mutant for various values of r [NM: Am I correct in having added 'for various values of r'? Also make r mathmode (i.e. italic in latex). BTW, I do not think it is a recommended practice to make G and R etc. be quoted by backslashes. We do it only for functions or code part? I may be wrong. Follow the most standard convention of markdown/github code documentation.] given the transition matrix `M`.
 
