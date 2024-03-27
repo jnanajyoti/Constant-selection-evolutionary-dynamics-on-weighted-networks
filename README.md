@@ -1,7 +1,7 @@
 
 # Fixation Probability of weighted networks
 
-This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [NM: cite our arxiv paper. Title is not necessary. Never say the journal name we submitted the paper to. No merit to say that !!]. The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context [NM: This sentence is vague. Are you saying that our code extends theirs to the case of weighted networks? Be clearer.].
+This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context [NM: This sentence is vague. Are you saying that our code extends theirs to the case of weighted networks? Be clearer.].
 
 ## How to Use
 
