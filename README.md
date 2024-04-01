@@ -42,6 +42,12 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 [NM: (1) Show examples for the case of general networks. In particular, people may be confused what G should be. Good to have a mock weighted network as an example to be put in this repository, which you use as input to an example usage to be written around here. (2) No mentioning to the case of six-node networks. You should not explain all details of the code for generating all figures, because it is too tedious and people are not interested in using much of the code (and we are thus responding to the request of the journal as well as releasing the code for the sake of interested readers where they are useful). So, apart from the six-node case (and an example usage mentioned above), no further documentation is necessary. But just place the code for generating each figure of the paper (which people are not intersted in using), without specific documentation except that which code creates which figures, perhaps in a new subfolder? Well, I may be wrong. As you are using jupiter notebook, how figures are generated may be self-explanatory, in which case it is already good. But you should still tell which notebook is for what.]
 
+## Data
+The (Data)[jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data] directory contains all the fixation probability data that we generated.
+
+### Empirical Network Data
+The empirical network metadata are provided in (Network Data)[Data/Empirical_Networks/Network_Data]
+
 ## Dependencies
 
 To use the notebook, ensure the following Python libraries are installed:
