@@ -45,8 +45,14 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ## Data
 The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated.
 
+### Networks on six nodes
+The data for the fixation probabilities for the 100 different weight assignments for the 112 non isomorphic connected network on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy)](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Birth-death process, while [weighted_networks_dB.npy)](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the death-Birth process.
+
+### Larger Symmetric Networks
+The data for the larger symmetric networks, that is, the weighted complete and star graphs are provided in [here](Data/Larger_Symmetric_Networks).
+
 ### Empirical Network Data
-The empirical network metadata are provided in [Network Data](Data/Empirical_Networks/Network_Data)
+The empirical network metadata are provided in [Network Data](Data/Empirical_Networks/Network_Data), for each of the six empirical networks. The simulated data for the fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
 
 ## Dependencies
 
