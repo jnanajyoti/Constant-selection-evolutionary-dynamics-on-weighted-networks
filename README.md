@@ -57,14 +57,10 @@ The data for the larger symmetric networks, that is, the weighted complete and s
 The empirical network metadata are provided in [Network Data](Data/Empirical_Networks/Network_Data), for each of the six empirical networks. The simulated data for the fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
 
 ## Figures
--[Figure 2](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2942fa9369377f0c15dfa69c13e363e0a309c92e/6_nodes_Bd.ipynb)
-
+-[Figure 2](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2942fa9369377f0c15dfa69c13e363e0a309c92e/6_nodes_Bd.ipynb) 
 -[Figure 3](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
-
 -[Figure 4](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
-
 -[Figure 5](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_star_graphs.ipynb)
-
 -[Figure 6](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Empirical_Network_Plots.ipynb)
 
 ## Dependencies
