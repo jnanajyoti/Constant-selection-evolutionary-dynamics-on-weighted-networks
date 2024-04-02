@@ -45,6 +45,9 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ## Networks on six nodes
 For each of the 112 networks on six nodes, we constructed 100 random weight assignments. [6_nodes_Bd](6_nodes_Bd.ipynb) contains the code for generation and classification of these weighted networks for the Bd updating rule, and [6_nodes_dB](6_nodes_dB.ipynb) contains the code for generation and classification of these weighted networks for the Bd updating rule
 
+## Tutorial
+The [Tutorial](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/main/Tutorial.ipynb) notebook illustrates the usage of the functions that we defined using a toy network.
+
 ## Data
 The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated.
 
