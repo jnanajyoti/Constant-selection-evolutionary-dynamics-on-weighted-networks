@@ -48,7 +48,7 @@ For each of the 112 networks on six nodes, we constructed 100 random weight assi
 ## Data
 The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated.
 
-### Networks on six nodes
+### Small Networks
 The data for the fixation probabilities for the 100 different weight assignments for the 112 non isomorphic connected network on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy)](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Birth-death process, while [weighted_networks_dB.npy)](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the death-Birth process.
 
 ### Larger Symmetric Networks
