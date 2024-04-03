@@ -37,36 +37,35 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
   - **`weighted_simulate(G,r)`**: Simulates the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulate(G,r)`.
   - **`weighted_simulation_count(G,n,r)`**: Simulates `n` times the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulation_count(G,n,r)`.
 
-[NM: You said switching networks, but there is no appearance of that. Remove the switching network part? Or disect it into different repositories? If you are willing to make the temporal network code open, like this, I am supportive of that though it is post publication of the JMB paper. (I do not remember if we have done so already.)]
-[Sorry, I wasn't finished editing the repository, that's why the readme had the temporal network text in it. Our switching temporal network code is available in [https://github.com/naokimas/Fixation-Probability]]
-
 [NM: (1) Show examples for the case of general networks. In particular, people may be confused what G should be. Good to have a mock weighted network as an example to be put in this repository, which you use as input to an example usage to be written around here. (2) No mentioning to the case of six-node networks. You should not explain all details of the code for generating all figures, because it is too tedious and people are not interested in using much of the code (and we are thus responding to the request of the journal as well as releasing the code for the sake of interested readers where they are useful). So, apart from the six-node case (and an example usage mentioned above), no further documentation is necessary. But just place the code for generating each figure of the paper (which people are not intersted in using), without specific documentation except that which code creates which figures, perhaps in a new subfolder? Well, I may be wrong. As you are using jupiter notebook, how figures are generated may be self-explanatory, in which case it is already good. But you should still tell which notebook is for what.]
 
 ## Networks on six nodes
-For each of the 112 networks on six nodes, we constructed 100 random weight assignments. [6_nodes_Bd](6_nodes_Bd.ipynb) contains the code for generation and classification of these weighted networks for the Bd updating rule, and [6_nodes_dB](6_nodes_dB.ipynb) contains the code for generation and classification of these weighted networks for the Bd updating rule
+For each of the 112 networks on six nodes, we constructed 100 random weight assignments. 
+- The [6_nodes_Bd.ipynb](6_nodes_Bd.ipynb) notebook contains the code for generation and classification of these weighted networks for the Bd updating rule.
+- The [6_nodes_dB.ipynb](6_nodes_dB.ipynb) notebook contains the code for generation and classification of these weighted networks for the Bd updating rule.
 
 ## Tutorial
-The [Tutorial](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/main/Tutorial.ipynb) notebook illustrates the usage of the functions that we defined using a toy network.
+The [Tutorial.ipynb](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/main/Tutorial.ipynb) notebook illustrates the usage of the functions that we defined using a toy network.
 
 ## Data
-The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated.
+The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated for the paper.
 
-### Small Networks
-The data for the fixation probabilities for the 100 different weight assignments for the 112 non isomorphic connected network on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy)](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Birth-death process, while [weighted_networks_dB.npy)](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the death-Birth process.
+### Small networks
+The data for the fixation probabilities for the 100 different weight assignments for the 112 non isomorphic connected network on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Birth-death process, while [weighted_networks_dB.npy](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the death-Birth process.
 
-### Larger Symmetric Networks
-The data for the larger symmetric networks, that is, the weighted complete and star graphs are provided in [here](Data/Larger_Symmetric_Networks).
+### Larger symmetric networks
+The data for the larger weighted complete and weighted star graphs are provided [here](Data/Larger_Symmetric_Networks).
 
-### Empirical Network Data
-The empirical network metadata are provided in [Network Data](Data/Empirical_Networks/Network_Data), for each of the six empirical networks. The simulated data for the fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
+### Empirical network data
+The empirical network metadata [NM: I don't know what "metadata" means, but I have been saying that we are not allowed to post other people's data on our website like this. Only the results of fixation prob.] are provided in [Network Data](Data/Empirical_Networks/Network_Data), for each of the six empirical networks. The numerically obtained fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
 
 ## Figures
--[Figure 1](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2779d4a5f9c167210467fe6ae6e0804254f25d09/Figures/Schematic_diagams.ipynb)
--[Figure 2](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2942fa9369377f0c15dfa69c13e363e0a309c92e/6_nodes_Bd.ipynb) 
--[Figure 3](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
--[Figure 4](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
--[Figure 5](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_star_graphs.ipynb)
--[Figure 6](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Empirical_Network_Plots.ipynb)
+- [Figure 1](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2779d4a5f9c167210467fe6ae6e0804254f25d09/Figures/Schematic_diagams.ipynb)
+- [Figure 2](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2942fa9369377f0c15dfa69c13e363e0a309c92e/6_nodes_Bd.ipynb) 
+- [Figure 3](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
+- [Figure 4](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_complete_graphs.ipynb)
+- [Figure 5](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Weights_on_star_graphs.ipynb)
+- [Figure 6](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/791515a48ad502f5c09d2bf089f23c40a3c365f4/Figures/Empirical_Network_Plots.ipynb)
 
 ## Dependencies
 
