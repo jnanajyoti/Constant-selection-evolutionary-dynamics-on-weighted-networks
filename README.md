@@ -11,7 +11,7 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 - **`T_weightMat_Mat(G, r)`**: Generates the $2^N \times 2^N$ transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
 
-- **`T_weightMat_dB(G,r)`**: Generates the $2^N \times 2^N$ transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
+- **`T_weightMat_dB(G,r)`**: Generates the $2^N \times 2^N$ transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for death-Birth updating.
 
 - **`matrix_solver(M)`**: Compute the fixation probability of the mutant for various values of $r$ given the transition matrix `M`.
 
@@ -41,7 +41,7 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 ## Networks on six nodes
 For each of the 112 networks on six nodes, we constructed 100 random weight assignments. 
 - The [6_nodes_Bd.ipynb](6_nodes_Bd.ipynb) notebook contains the code for generation and classification of these weighted networks for the Bd updating rule.
-- The [6_nodes_dB.ipynb](6_nodes_dB.ipynb) notebook contains the code for generation and classification of these weighted networks for the Bd updating rule.
+- The [6_nodes_dB.ipynb](6_nodes_dB.ipynb) notebook contains the code for generation and classification of these weighted networks for the dB updating rule.
 
 ## Tutorial
 The [Tutorial.ipynb](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/main/Tutorial.ipynb) notebook illustrates the usage of the functions that we defined using a toy network.
@@ -50,13 +50,13 @@ The [Tutorial.ipynb](https://github.com/jnanajyoti/Constant-selection-evolutiona
 The [Data](jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/Data) directory contains all the fixation probability data that we generated for the paper.
 
 ### Small networks
-The data for the fixation probabilities for the 100 different weight assignments for the 112 non isomorphic connected network on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Birth-death process, while [weighted_networks_dB.npy](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the death-Birth process.
+The data for the fixation probabilities for the 100 different weight assignments for the 112 non-isomorphic connected networks on six nodes are provided [here](Data/Six_Nodes).  [weighted_networks_Bd.npy](Data/Six_Nodes/weighted_networks_Bd.npy) contains the results for the Bd updating rule, while [weighted_networks_dB.npy](Data/Six_Nodes/weighted_networks_dB.npy) contains the result for the dB updating rule.
 
 ### Larger symmetric networks
-The data for the larger weighted complete and weighted star graphs are provided [here](Data/Larger_Symmetric_Networks).
+The data for the larger weighted complete and weighted star graphs are [here](Data/Larger_Symmetric_Networks).
 
 ### Empirical network data
- The numerically obtained fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
+ The numerically obtained fixation probabilities for the empirical networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
 
 ## Figures
 - [Figure 1](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2779d4a5f9c167210467fe6ae6e0804254f25d09/Figures/Schematic_diagams.ipynb)
