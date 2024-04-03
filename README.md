@@ -1,7 +1,7 @@
 
 # Fixation Probability of weighted networks
 
-This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static [NM: undirected? if so add "undirected".] weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context. [NM: I don't understand "further explored within the context". Either explain better or delete.]
+This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static undirected weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context. [NM: I don't understand "further explored within the context". Either explain better or delete.]
 
 ## How to Use
 
@@ -57,7 +57,7 @@ The data for the fixation probabilities for the 100 different weight assignments
 The data for the larger weighted complete and weighted star graphs are provided [here](Data/Larger_Symmetric_Networks).
 
 ### Empirical network data
-The empirical network metadata [NM: I don't know what "metadata" means, but I have been saying that we are not allowed to post other people's data on our website like this. Only the results of fixation prob.] are provided in [Network Data](Data/Empirical_Networks/Network_Data), for each of the six empirical networks. The numerically obtained fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
+[NM: I don't know what "metadata" means, but I have been saying that we are not allowed to post other people's data on our website like this. Only the results of fixation prob.][JB: Removed those files] are The numerically obtained fixation probabilities for these networks are provided in [Simulation_Results](Data/Empirical_Networks/Simulation_Results).
 
 ## Figures
 - [Figure 1](https://github.com/jnanajyoti/Constant-selection-evolutionary-dynamics-on-weighted-networks/blob/2779d4a5f9c167210467fe6ae6e0804254f25d09/Figures/Schematic_diagams.ipynb)
