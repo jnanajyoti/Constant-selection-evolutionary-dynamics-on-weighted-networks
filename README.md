@@ -1,15 +1,15 @@
 
 # Fixation Probability of weighted networks
 
-This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context [NM: This sentence is vague. Are you saying that our code extends theirs to the case of weighted networks? Be clearer.][JB: I followed the math and algorithms that they outlined in their paper [Hindersin et al. (2016)](https://pubmed.ncbi.nlm.nih.gov/27555086/), but I didn't use any of their code. Additionally, the code for the larger symmetric networks and empirical networks that I wrote was unrelated to their work].
+This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context. [NM: I don't understand "further explored within the context". Either explain better or delete.]
 
 ## How to Use
 
-The `functions.ipynb` notebook is equipped with functions designed for the analysis of fixation probabilities across various network configurations, including weighted and unweighted networks [NM: This 'temporal switching' part contradicts the above paragraph because in the above paragraph you only said weighted networks. Mention temporal as well there? Also, it that is the case, explicitly say that weighted network part accompanies our arxiv paper and the switching network part accompanies our JMB paper. Just to make sure, in our JMB paper we did not particularly released our code and you are doing it here for the first time for the JMB paper? I simply want to know.][JB: Removed the temporal part. Yes, I didn't release the code for our JMB paper post submission until you asked me to upload it, to share it with Aming Li. So, [https://github.com/naokimas/Fixation-Probability], contains all the functions I used in our JMB paper.]. Below is a breakdown of the primary functions and their intended applications:
+The `functions.ipynb` notebook is equipped with functions designed for the analysis of fixation probabilities across various unweighted and weighted networks. Below is a breakdown of the primary functions and their intended applications:
 
 ### Transition probability matrices
 
-- **`T_weightMat_Mat(G, r)`**: Generates the 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
+- **`T_weightMat_Mat(G, r)`**: Generates the $$2^N$$ 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
 
 - **`T_weightMat_dB(G,r)`**: Generates the 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
 
