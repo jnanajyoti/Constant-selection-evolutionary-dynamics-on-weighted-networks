@@ -26,7 +26,7 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
   - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the fixation probability for the weighted star graph. See section 4.2.2 of the paper for the definition of the weighted star graph.
 
 
-### Simulations on arbitrary [NM: undirected? if so, add it here.] networks
+### Simulations on arbitrary undirected networks
 
 - **Unweighted networks**: 
   - **`simulate(G,r)`**: Simulates the Birth-death process on network `G` with mutant's fitness `r`. The function returns the string 'blue' or 'red', depending on whether the resident or the mutant has fixated.
@@ -37,7 +37,6 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
   - **`weighted_simulate(G,r)`**: Simulates the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulate(G,r)`.
   - **`weighted_simulation_count(G,n,r)`**: Simulates `n` times the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulation_count(G,n,r)`.
 
-[NM: (1) Show examples for the case of general networks. In particular, people may be confused what G should be. Good to have a mock weighted network as an example to be put in this repository, which you use as input to an example usage to be written around here. (2) No mentioning to the case of six-node networks. You should not explain all details of the code for generating all figures, because it is too tedious and people are not interested in using much of the code (and we are thus responding to the request of the journal as well as releasing the code for the sake of interested readers where they are useful). So, apart from the six-node case (and an example usage mentioned above), no further documentation is necessary. But just place the code for generating each figure of the paper (which people are not intersted in using), without specific documentation except that which code creates which figures, perhaps in a new subfolder? Well, I may be wrong. As you are using jupiter notebook, how figures are generated may be self-explanatory, in which case it is already good. But you should still tell which notebook is for what.]
 
 ## Networks on six nodes
 For each of the 112 networks on six nodes, we constructed 100 random weight assignments. 
