@@ -1,7 +1,7 @@
 
 # Fixation Probability of weighted networks
 
-This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context. [NM: I don't understand "further explored within the context". Either explain better or delete.]
+This repository contains the `functions.ipynb` Jupyter notebook, offering a suite of functions to calculate the fixation probabilities of static [NM: undirected? if so add "undirected".] weighted networks, assuming constant-selection evolutionary dynamics. It is an accompaniment of [Bhaumik & Masuda (2024)](https://arxiv.org/abs/2403.17208) . The methods for the static netoworks are based on Hindersin et al. (2016), available at [efficientFixation](https://github.com/hindersin/efficientFixation), and further explored within the context. [NM: I don't understand "further explored within the context". Either explain better or delete.]
 
 ## How to Use
 
@@ -9,33 +9,33 @@ The `functions.ipynb` notebook is equipped with functions designed for the analy
 
 ### Transition probability matrices
 
-- **`T_weightMat_Mat(G, r)`**: Generates the $2^N \times 2^N$ 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
+- **`T_weightMat_Mat(G, r)`**: Generates the $2^N \times 2^N$ transition probability matrix for a network `G` with fitness value `r` for the mutant type, and for Birth-death updating.
 
-- **`T_weightMat_dB(G,r)`**: Generates the 2<sup>N</sup> x 2<sup>N</sup> transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
+- **`T_weightMat_dB(G,r)`**: Generates the $2^N \times 2^N$ transition probability matrix for a network `G` with fitness value `r`, and for death-Birth updating.
 
-- **`matrix_solver(M)`**: Compute the fixation probability of the mutant for various values of *r* [NM: Am I correct in having added 'for various values of r'? Also make r mathmode (i.e. italic in latex). BTW, I do not think it is a recommended practice to make G and R etc. be quoted by backslashes. We do it only for functions or code part? I may be wrong. Follow the most standard convention of markdown/github code documentation.][JB: Both `` and ** are used. Since for our purposes ** is more apt, I used it.] given the transition matrix `M`.
+- **`matrix_solver(M)`**: Compute the fixation probability of the mutant for various values of $r$ given the transition matrix `M`.
 
 
 ### For larger symmetric networks
 
-- **Complete graph  (N<sub>1</sub>+1)(N<sub>2</sub>+1) x (N<sub>1</sub>+1)(N<sub>2</sub>+1)**: 
+- **Weighted complete graph**: 
   - **`matrix_complete_weight_solver(w_1,w_2,N_1,N_2,r)`**: Computes the fixation probability for the weighted complete graph. See section 4.2.1 of the paper for the definition of the weighted complete graph.
 
 
-- **Star graph  (2(N<sub>1</sub>+1)(N<sub>2</sub>+1) x 2(N<sub>1</sub>+1)(N<sub>2</sub>+1))**:
-  - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the fixation probability for the weighted star graph. See section 4.2.2 of the paper for the definition of the weighted complete graph.
+- **Weighted star graph**:
+  - **`weighted_star_solver(N_1,N_2,w,r)`**:  Computes the fixation probability for the weighted star graph. See section 4.2.2 of the paper for the definition of the weighted star graph.
 
 
-### Simulations on arbitrary weighted networks
+### Simulations on arbitrary [NM: undirected? if so, add it here.] networks
 
 - **Unweighted networks**: 
-  - **`simulate(G,r)`**: Simulates the Birth-death process on the network `G` with mutant fitness `r`. The function returns the string 'blue' or 'red', depending on whether the resident or the mutant fixated.
-  - **`simulation_count(G,n,r)`**: Simulates `n` times the Birth-death process on the network `G` with mutant fitness `r`. The function returns the proportion of runs in which the mutant fixated, which gives a numerical estimate of the fixation probability.
+  - **`simulate(G,r)`**: Simulates the Birth-death process on network `G` with mutant's fitness `r`. The function returns the string 'blue' or 'red', depending on whether the resident or the mutant has fixated.
+  - **`simulation_count(G,n,r)`**: Simulates `n` times the Birth-death process on network `G` with mutant's fitness `r`. The function returns the proportion of runs in which the mutant has fixated, which gives a numerical estimate of the fixation probability.
 
 
 - **Weighted networks**:
-  - **`weighted_simulate(G,r)`**: Simulates the Birth-death process on the weighted network `G` with mutant fitness `r`.
-  - **`weighted_simulation_count(G,n,r)`**: Simulates the Birth-death process on the weighted network `G` with mutant fitness `r` `n` times, and returns the proportion of runs where the mutant fixated.
+  - **`weighted_simulate(G,r)`**: Simulates the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulate(G,r)`.
+  - **`weighted_simulation_count(G,n,r)`**: Simulates `n` times the Birth-death process on weighted network `G` with mutant's fitness `r`. The output of the function is the same as that of `simulation_count(G,n,r)`.
 
 [NM: You said switching networks, but there is no appearance of that. Remove the switching network part? Or disect it into different repositories? If you are willing to make the temporal network code open, like this, I am supportive of that though it is post publication of the JMB paper. (I do not remember if we have done so already.)]
 [Sorry, I wasn't finished editing the repository, that's why the readme had the temporal network text in it. Our switching temporal network code is available in [https://github.com/naokimas/Fixation-Probability]]
